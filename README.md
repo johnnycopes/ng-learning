@@ -1,5 +1,7 @@
 # NgLearning
 
+A sandbox Angular project used for experimenting and learning
+
 ## Completed
 
 Date     | Resource
