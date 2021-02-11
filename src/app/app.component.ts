@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-learning';
+  public timeHeld: number = 0;
+
+  public onHold(time: number): void {
+    this.timeHeld = time;
+  }
 }
