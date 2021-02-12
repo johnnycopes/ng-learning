@@ -1,0 +1,9 @@
+<p>{{ selected || 'Choose an option' }}</p>
+<ul>
+  <li *ngFor="let option of options"
+    [class.selected]="option === selected"
+    (click)="selectOption(option)"
+  >
+    {{ option }}
+  </li>
+</ul>

@@ -11,4 +11,7 @@ export class AppComponent {
   public onHold(time: number): void {
     this.timeHeld = time;
   }
+
+  public sharks = ["Great white", "Hammerhead", "Tiger", "Razor"];
+  public selectedShark: string | undefined;
 }
