@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HoldableDirective } from './holdable.directive';
 import { ButtonComponent } from './button/button.component';
 import { SelectorComponent } from './selector/selector.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SelectorComponent } from './selector/selector.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
