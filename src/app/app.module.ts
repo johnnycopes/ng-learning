@@ -9,6 +9,7 @@ import { SelectorComponent } from './selector/selector.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { UnlessDirective } from './unless.directive';
 import { FileSelectComponent } from './file-select/file-select.component';
+import { FileSelectDefDirective } from './file-select/file-select-def.directive';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FileSelectComponent } from './file-select/file-select.component';
     SelectorComponent,
     UnlessDirective,
     FileSelectComponent,
+    FileSelectDefDirective,
   ],
   imports: [
     BrowserModule,

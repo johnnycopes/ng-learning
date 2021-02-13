@@ -5,8 +5,7 @@
   [attr.multiple]="multiple ? '' : null"
   (change)="onFileSelectChange($event)"
 />
-<button app-button
-  (click)="openFileSelectDialog()"
->
-  Select a file
-</button>
+<ng-container *ngIf="fileSelectDef"
+  [ngTemplateOutlet]="fileSelectDef?.template"
+  [ngTemplateOutletContext]="fileSelectDefContext"
+></ng-container>

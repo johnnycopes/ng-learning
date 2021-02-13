@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ContentChild, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
+import { FileSelectDefDirective } from "./file-select-def.directive";
 
 @Component({
   selector: 'app-file-select',
@@ -14,11 +15,18 @@ export class FileSelectComponent {
   @ViewChild("fileInput")
   public fileInput: ElementRef<HTMLInputElement> | undefined;
 
+  @ContentChild(FileSelectDefDirective)
+  public fileSelectDef: FileSelectDefDirective | undefined;
+
+  public fileSelectDefContext = {
+    $implicit: () => this.openFileSelectDialog()
+  };
+
   public openFileSelectDialog() {
     this.fileInput?.nativeElement.click();
   }
 
-  public onFileSelectionChanged(event: Event): void {
+  public onFileSelectChange(event: Event): void {
     const selectedFiles = (event.target as HTMLInputElement).files;
     this.fileSelect.next(selectedFiles);
   }
