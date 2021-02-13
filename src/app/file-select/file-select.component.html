@@ -1,0 +1,12 @@
+<input
+  #fileInput
+  type="file"
+  [attr.accept]="accept"
+  [attr.multiple]="multiple ? '' : null"
+  (change)="onFileSelectChange($event)"
+/>
+<button app-button
+  (click)="openFileSelectDialog()"
+>
+  Select a file
+</button>

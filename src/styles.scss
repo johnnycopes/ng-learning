@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  background: salmon;
+  background: darksalmon;
 }
 
 body {
@@ -13,3 +13,8 @@ body {
   font-family: monospace;
 }
 
+hr {
+  background: #fff;
+  opacity: 0.5;
+  border: 1px solid;
+}

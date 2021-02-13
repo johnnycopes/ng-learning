@@ -1,9 +1,9 @@
-import { Directive, Input, OnInit, TemplateRef, ViewContainerRef } from '@angular/core';
+import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 
 @Directive({
   selector: '[appUnless]'
 })
-export class UnlessDirective implements OnInit {
+export class UnlessDirective {
   @Input()
   set appUnless(condition: boolean) {
     if (!condition && !this._hasView) {
@@ -20,10 +20,5 @@ export class UnlessDirective implements OnInit {
     private _templateRef: TemplateRef<any>,
     private _viewContainer: ViewContainerRef
   ) { }
-
-  public ngOnInit(): void {
-    console.log(this._templateRef);
-    console.log(this._viewContainer);
-  }
 
 }

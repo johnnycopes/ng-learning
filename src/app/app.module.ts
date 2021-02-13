@@ -8,6 +8,7 @@ import { ButtonComponent } from './button/button.component';
 import { SelectorComponent } from './selector/selector.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { UnlessDirective } from './unless.directive';
+import { FileSelectComponent } from './file-select/file-select.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { UnlessDirective } from './unless.directive';
     ButtonComponent,
     SelectorComponent,
     UnlessDirective,
+    FileSelectComponent,
   ],
   imports: [
     BrowserModule,

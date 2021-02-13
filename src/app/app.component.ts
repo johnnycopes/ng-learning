@@ -16,4 +16,8 @@ export class AppComponent {
   public selectedShark: string | undefined;
 
   public bool: boolean = true;
+
+  public onFileSelect(files: FileList | null): void {
+    console.log("incoming:", files);
+  }
 }
