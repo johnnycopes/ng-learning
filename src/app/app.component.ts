@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { faLaughWink } from "@fortawesome/free-regular-svg-icons";
 
 @Component({
   selector: 'app-root',
@@ -16,4 +14,6 @@ export class AppComponent {
 
   public sharks = ["Great white", "Hammerhead", "Tiger", "Razor"];
   public selectedShark: string | undefined;
+
+  public bool: boolean = true;
 }

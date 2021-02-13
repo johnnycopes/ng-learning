@@ -6,7 +6,7 @@
 </button>
 
 <p>
-  Held for {{ timeHeld }} ms
+  {{ timeHeld ? 'Held for ' + timeHeld + ' ms' : 'Not currently holding' }}
 </p>
 
 <hr>
@@ -19,3 +19,18 @@
     {{ position + 1 }} : {{ option }}
   </ng-template>
 </app-selector>
+
+<hr>
+
+<button app-button
+  (click)="bool = !bool"
+>
+  Click to flip!
+</button>
+
+<p>
+  Current value of <code>bool</code>: {{ bool }}
+</p>
+<p *appUnless="bool">
+  Whoa!
+</p>

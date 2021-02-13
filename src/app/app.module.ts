@@ -7,6 +7,7 @@ import { HoldableDirective } from './holdable.directive';
 import { ButtonComponent } from './button/button.component';
 import { SelectorComponent } from './selector/selector.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HoldableDirective,
     ButtonComponent,
     SelectorComponent,
+    UnlessDirective,
   ],
   imports: [
     BrowserModule,
