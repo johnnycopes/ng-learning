@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { faLaughWink } from "@fortawesome/free-regular-svg-icons";
 
 @Component({
   selector: 'app-root',

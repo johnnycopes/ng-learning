@@ -13,7 +13,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AppComponent,
     HoldableDirective,
     ButtonComponent,
-    SelectorComponent
+    SelectorComponent,
   ],
   imports: [
     BrowserModule,

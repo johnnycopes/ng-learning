@@ -1,9 +1,16 @@
 <p>{{ selected || 'Choose an option' }}</p>
 <ul>
-  <li *ngFor="let option of options"
+  <li *ngFor="let option of options; index as i"
     [class.selected]="option === selected"
     (click)="selectOption(option)"
   >
-    {{ option }}
+    <ng-container *ngTemplateOutlet="optionTemplate || defaultTemplate; context: {
+      $implicit: option,
+      index: i
+    }"></ng-container>
   </li>
 </ul>
+
+<ng-template #defaultTemplate let-option>
+  {{ option }}
+</ng-template>
