@@ -14,16 +14,22 @@ export class HelpContextComponent {
   public icon = faQuestionCircle;
   public showHelp: boolean = false;
 
-  @HostListener("document:click", ["$event"])
-  documentClicked({ target }: MouseEvent) {
-    console.log(target);
+  /*
+  BAD IDEA: using host listener in these cases. Click listeners will get registered for every
+  instance of the component, even when the dialog isn't opened.
+
+  GOOD IDEAS: removing the HostListeners and instead executing these events on the dialog itself (done in the code).
+  Additionally, the methods can be extracted to a separate directive and used on the dialog element rather than the component
+  */
+  // @HostListener("document:click", ["$event"])
+  public onDocumentClick({ target }: MouseEvent) {
     if (!this.containerRef?.nativeElement.contains(target)) {
       this.showHelp = false;
     }
   }
 
-  @HostListener("window:keydown.Escape")
-  escapedClicked(): void {
+  // @HostListener("window:keydown.Escape")
+  public onEscapeClick(): void {
     this.showHelp = false;
   }
 }

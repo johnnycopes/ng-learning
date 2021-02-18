@@ -8,6 +8,8 @@
   ></fa-icon>
   <div *ngIf="showHelp"
     class="dialog"
+    (document:click)="onDocumentClick($event)"
+    (window:keydown.Escape)="onEscapeClick()"
   >
     {{ message }}
   </div>
