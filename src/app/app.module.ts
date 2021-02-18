@@ -1,30 +1,33 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { HoldableDirective } from './holdable.directive';
 import { ButtonComponent } from './button/button.component';
-import { SelectorComponent } from './selector/selector.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { UnlessDirective } from './unless.directive';
 import { FileSelectComponent } from './file-select/file-select.component';
 import { FileSelectDefDirective } from './file-select/file-select-def.directive';
+import { HelpContextComponent } from './help-context/help-context.component';
+import { HoldableDirective } from './holdable.directive';
+import { SelectorComponent } from './selector/selector.component';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HoldableDirective,
     ButtonComponent,
-    SelectorComponent,
-    UnlessDirective,
     FileSelectComponent,
     FileSelectDefDirective,
+    HelpContextComponent,
+    HoldableDirective,
+    SelectorComponent,
+    UnlessDirective,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    BrowserModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

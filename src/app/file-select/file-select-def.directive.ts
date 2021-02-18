@@ -10,7 +10,7 @@ export interface IFileSelectContext {
 export class FileSelectDefDirective {
 
   constructor(
-    public template: TemplateRef<IFileSelectContext>
+    public template: TemplateRef<IFileSelectContext> | null
   ) { }
 
 }

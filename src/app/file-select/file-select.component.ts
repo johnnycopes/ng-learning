@@ -16,7 +16,7 @@ export class FileSelectComponent {
   public fileInput: ElementRef<HTMLInputElement> | undefined;
 
   @ContentChild(FileSelectDefDirective)
-  public fileSelectDef: FileSelectDefDirective | undefined;
+  public fileSelectDef: FileSelectDefDirective | null = null;
 
   public fileSelectDefContext = {
     $implicit: () => this.openFileSelectDialog()

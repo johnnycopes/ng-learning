@@ -1,0 +1,14 @@
+<ng-content></ng-content>
+<div class="container"
+  #container
+>
+  <fa-icon class="icon"
+    [icon]="icon"
+    (click)="showHelp = true"
+  ></fa-icon>
+  <div *ngIf="showHelp"
+    class="dialog"
+  >
+    {{ message }}
+  </div>
+</div>
