@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './button/button.component';
+import { ClickOutsideDirective } from './click-outside.directive';
 import { FileSelectComponent } from './file-select/file-select.component';
 import { FileSelectDefDirective } from './file-select/file-select-def.directive';
 import { HelpContextComponent } from './help-context/help-context.component';
@@ -17,6 +18,7 @@ import { UnlessDirective } from './unless.directive';
   declarations: [
     AppComponent,
     ButtonComponent,
+    ClickOutsideDirective,
     FileSelectComponent,
     FileSelectDefDirective,
     HelpContextComponent,
