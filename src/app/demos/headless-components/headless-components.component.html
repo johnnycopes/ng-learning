@@ -1,0 +1,8 @@
+<app-file-select (fileSelect)="onFileSelect($event)">
+  <button app-button
+    *appFileSelectDef="let openFileSelectDialog"
+    (click)="openFileSelectDialog()"
+  >
+    Select a file
+  </button>
+</app-file-select>

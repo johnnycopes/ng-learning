@@ -1,0 +1,10 @@
+<button app-button
+  appHoldable
+  (holdTime)="onHold($event)"
+>
+  Hold me!
+</button>
+
+<p>
+  {{ timeHeld ? 'Held for ' + timeHeld + ' ms' : 'Not currently holding' }}
+</p>

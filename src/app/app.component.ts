@@ -5,19 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  public timeHeld: number = 0;
-
-  public onHold(time: number): void {
-    this.timeHeld = time;
-  }
-
-  public sharks = ["Great white", "Hammerhead", "Tiger", "Razor"];
-  public selectedShark: string | undefined;
-
-  public bool: boolean = true;
-
-  public onFileSelect(files: FileList | null): void {
-    console.log("incoming:", files);
-  }
-}
+export class AppComponent { }

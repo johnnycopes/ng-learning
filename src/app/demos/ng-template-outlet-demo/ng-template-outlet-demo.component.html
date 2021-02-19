@@ -1,0 +1,8 @@
+<app-selector
+  [options]="sharks"
+  [(selected)]="selectedShark"
+>
+  <ng-template let-option let-position="index">
+    {{ position + 1 }} : {{ option }}
+  </ng-template>
+</app-selector>

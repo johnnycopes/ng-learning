@@ -1,0 +1,12 @@
+<button app-button
+  (click)="hide = !hide"
+>
+  Change!
+</button>
+
+<p>
+  Current value of <code>hide</code>: {{ hide }}
+</p>
+<p *appUnless="hide">
+  You can see me!
+</p>
