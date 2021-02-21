@@ -1,17 +1,11 @@
-<app-holdable-demo></app-holdable-demo>
+<h1>Angular Learning</h1>
 
-<hr>
+<ol>
+  <li *ngFor="let demo of demos">
+    <a [routerLink]="demo.path">
+      {{ demo.name }}
+    </a>
+  </li>
+</ol>
 
-<app-ng-template-outlet-demo></app-ng-template-outlet-demo>
-
-<hr>
-
-<app-structural-directives></app-structural-directives>
-
-<hr>
-
-<app-headless-components></app-headless-components>
-
-<hr>
-
-<app-global-event-listeners-demo></app-global-event-listeners-demo>
+<router-outlet></router-outlet>
