@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from "../shared/shared.module";
 
+import { DemoComponent } from './demo.component';
 import { GlobalEventListenersDemoComponent } from './global-event-listeners-demo/global-event-listeners-demo.component';
 import { HeadlessComponentsComponent } from './headless-components/headless-components.component';
 import { HoldableDemoComponent } from './holdable-demo/holdable-demo.component';
@@ -11,6 +12,7 @@ import { StructuralDirectivesComponent } from './structural-directives/structura
 
 @NgModule({
   declarations: [
+    DemoComponent,
     GlobalEventListenersDemoComponent,
     HeadlessComponentsComponent,
     HoldableDemoComponent,
@@ -18,6 +20,7 @@ import { StructuralDirectivesComponent } from './structural-directives/structura
     StructuralDirectivesComponent,
   ],
   exports: [
+    DemoComponent,
     GlobalEventListenersDemoComponent,
     HeadlessComponentsComponent,
     HoldableDemoComponent,

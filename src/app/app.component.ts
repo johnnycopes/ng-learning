@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IDemo } from "./demos/demo.interface";
+import { DemoService } from "./demos/demo.service";
 import { DEMOS } from "./demos/demos";
 
 @Component({

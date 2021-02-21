@@ -1,0 +1,20 @@
+<ng-container *ngIf="demo$ | async as demo; else noDemo"
+  class="details"
+>
+  <h2>
+    {{ demo.name }}
+  </h2>
+  <a [href]="demo.resource"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    {{ demo.resource }}
+  </a>
+  <hr>
+</ng-container>
+
+<ng-template #noDemo>
+  <h2>Select a demo from the list</h2>
+</ng-template>
+
+<ng-content></ng-content>
