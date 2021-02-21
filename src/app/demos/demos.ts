@@ -1,9 +1,9 @@
 import { IDemo } from "./demo.interface";
 import { HoldableDemoComponent } from "./holdable-demo/holdable-demo.component";
-import { NgTemplateOutletDemoComponent } from "./ng-template-outlet-demo/ng-template-outlet-demo.component";
+import { NgTemplateOutletCustomizationComponent } from "./ng-template-outlet-customization/ng-template-outlet-customization.component";
 import { StructuralDirectivesComponent } from "./structural-directives/structural-directives.component";
 import { HeadlessComponentsComponent } from "./headless-components/headless-components.component";
-import { GlobalEventListenersDemoComponent } from "./global-event-listeners-demo/global-event-listeners-demo.component";
+import { GlobalEventListenersComponent } from "./global-event-listeners/global-event-listeners-demo.component";
 
 export const DEMOS: IDemo[] = [
   {
@@ -14,9 +14,9 @@ export const DEMOS: IDemo[] = [
   },
   {
     name: "NgTemplateOutlet Customization",
-    path: "02-ng-template-outlet",
+    path: "02-ng-template-outlet-customization",
     resource: "https://indepth.dev/posts/1405/ngtemplateoutlet",
-    component: NgTemplateOutletDemoComponent,
+    component: NgTemplateOutletCustomizationComponent,
   },
   {
     name: "Structural Directives",
@@ -34,6 +34,6 @@ export const DEMOS: IDemo[] = [
     name: "Global Event Listeners",
     path: "05-global-event-listeners",
     resource: "https://indepth.dev/posts/1410/simple-angular-context-help-component-or-how-global-event-listener-can-affect-your-performance",
-    component: GlobalEventListenersDemoComponent,
+    component: GlobalEventListenersComponent,
   }
 ];
