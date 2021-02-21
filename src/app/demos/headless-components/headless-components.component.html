@@ -3,6 +3,14 @@
     *appFileSelectDef="let openFileSelectDialog"
     (click)="openFileSelectDialog()"
   >
-    Select a file
+    This button lets you select a file
+  </button>
+</app-file-select>
+
+<app-file-select (fileSelect)="onFileSelect($event)">
+  <button *appFileSelectDef="let openFileSelectDialog"
+    (click)="openFileSelectDialog()"
+  >
+    This button also lets you select a file
   </button>
 </app-file-select>
