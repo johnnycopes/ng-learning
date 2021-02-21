@@ -1,16 +1,9 @@
+import { IDemo } from "./demo.interface";
 import { HoldableDemoComponent } from "./holdable-demo/holdable-demo.component";
 import { NgTemplateOutletDemoComponent } from "./ng-template-outlet-demo/ng-template-outlet-demo.component";
 import { StructuralDirectivesComponent } from "./structural-directives/structural-directives.component";
 import { HeadlessComponentsComponent } from "./headless-components/headless-components.component";
 import { GlobalEventListenersDemoComponent } from "./global-event-listeners-demo/global-event-listeners-demo.component";
-
-interface IDemo {
-  name: string;
-  path: string;
-  description: string;
-  resource: string;
-  component: unknown;
-}
 
 export const DEMOS: IDemo[] = [
   {

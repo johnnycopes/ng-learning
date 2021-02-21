@@ -1,11 +1,17 @@
-<h1>Angular Learning</h1>
+<nav class="">
+  <h1>Angular Learning</h1>
+  <ol>
+    <li *ngFor="let demo of demos">
+      <a [routerLink]="demo.path"
+        routerLinkActive
+        #activeLink="routerLinkActive"
+      >
+        {{ demo.name }}
+      </a>
+    </li>
+  </ol>
+</nav>
 
-<ol>
-  <li *ngFor="let demo of demos">
-    <a [routerLink]="demo.path">
-      {{ demo.name }}
-    </a>
-  </li>
-</ol>
-
-<router-outlet></router-outlet>
+<main>
+  <router-outlet></router-outlet>
+</main>

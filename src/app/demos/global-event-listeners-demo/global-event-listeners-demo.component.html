@@ -1,5 +1,5 @@
-<h3 *ngFor="let number of numbers"
-  [app-help-context]="'Some description ' + number"
+<h3 *ngFor="let number of [].constructor(10); let i = index"
+  [app-help-context]="'Some description ' + (i + 1)"
 >
-  Some title {{ number }}
+  Some title {{ i + 1 }}
 </h3>

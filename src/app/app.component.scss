@@ -1,0 +1,12 @@
+:host {
+  display: grid;
+  grid-template-columns: [nav] 512px [main] 1fr;
+}
+
+nav {
+  grid-column: nav;
+}
+
+main {
+  grid-column: main;
+}
