@@ -11,6 +11,7 @@ No.|Date     | Resource
 03 |02/13/21 | [Structural Directives](https://angular.io/guide/structural-directives#structural-directives)
 04 |02/13/21 | [Headless Angular components](https://indepth.dev/posts/1416/headless-angular-components)
 05 |02/18/21 | [Global event listeners + performance](https://indepth.dev/posts/1410/simple-angular-context-help-component-or-how-global-event-listener-can-affect-your-performance)
+06 |02/24/21 | [Template-Driven Hero Form](https://www.spreaker.com/user/ng-conf/e047-forms-series-episode-2-template-dri)
 
 ## Upcoming
 

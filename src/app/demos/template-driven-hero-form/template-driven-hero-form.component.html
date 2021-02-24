@@ -1,0 +1,90 @@
+<div [hidden]="submitted">
+  <!-- <h1>Hero Form</h1> -->
+  <!-- <p>Based on Angular
+    <a href="https://angular.io/guide/forms" target="_blank">"Template Driven Forms"</a> tutorial
+  </p> -->
+
+  {{ diagnostic }}<br><br>
+
+  <form #heroForm="ngForm"
+    (ngSubmit)="onSubmit()"
+  >
+    <div class="form-group">
+      <label for="name">
+        Hero Name
+      </label>
+      <input class="form-control"
+        id="name"
+        type="text"
+        required
+        #name="ngModel"
+        [(ngModel)]="model.name"
+        name="name"
+      >
+      <div [hidden]="name.valid || name.pristine"
+        class="alert alert--danger"
+      >
+        Name is required
+      </div>
+      <label for="power">
+        Hero Power
+      </label>
+      <select class="form-control"
+        id="power"
+        required
+        [(ngModel)]="model.power"
+        name="power"
+      >
+        <option *ngFor="let pow of powers"
+          [value]="pow"
+        >
+          {{pow}}
+        </option>
+      </select>
+      <label for="alter-ego">
+        Alter Ego
+      </label>
+      <input class="form-control"
+        id="alter-ego"
+        type="text"
+        [(ngModel)]="model.alterEgo"
+        name="alter-ego"
+      >
+    </div>
+    <div class="buttons">
+      <button app-button
+        (click)="newHero(); heroForm.reset()"
+      >
+        New Hero
+      </button>
+      <button app-button
+        type="submit"
+        [disabled]="!heroForm.form.valid"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h2>You submitted the following:</h2>
+  <div class="row">
+    <h4>Name:</h4>
+    <p>{{ model.name }}</p>
+  </div>
+  <div class="row">
+    <h4>Alter Ego:</h4>
+    <p>{{ model.alterEgo }}</p>
+  </div>
+  <div class="row">
+    <h4>Power:</h4>
+    <p>{{ model.power }}</p>
+  </div>
+  <br>
+  <button app-button
+    (click)="submitted = false"
+  >
+    Edit
+  </button>
+</div>

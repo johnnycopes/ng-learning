@@ -29,3 +29,38 @@ h1, h2, h3, h4, h5, h6 {
 h1 { font-size: 36px; }
 h2 { font-size: 30px; }
 h3 { font-size: 24px; }
+
+input, select {
+  padding: 8px 16px;
+  font-size: 20px;
+  border-radius: 0;
+  border: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+// Forms
+
+.form-control {
+  margin-bottom: 16px;
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 8px solid limegreen;
+}
+
+.ng-invalid:not(form)  {
+  border-left: 8px solid salmon;
+}
+
+.alert {
+  padding: 4px;
+  margin-bottom: 8px;
+
+  &--danger {
+    background: salmon;
+  }
+}

@@ -1,8 +1,14 @@
-:host {
+.app-button {
   background: indianred;
   color: #fff;
   font-size: 20px;
   font-family: monospace;
   padding: 8px 16px;
   cursor: pointer;
+
+  &--disabled {
+    color: gray;
+    background: lightgray;
+    cursor: default;
+  }
 }

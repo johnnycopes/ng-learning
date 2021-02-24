@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms";
 import { SharedModule } from "../shared/shared.module";
 
 import { DemoComponent } from './demo.component';
@@ -7,6 +8,7 @@ import { HeadlessComponentsComponent } from './headless-components/headless-comp
 import { HoldableDemoComponent } from './holdable-demo/holdable-demo.component';
 import { NgTemplateOutletCustomizationComponent } from './ng-template-outlet-customization/ng-template-outlet-customization.component';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { TemplateDrivenHeroFormComponent } from './template-driven-hero-form/template-driven-hero-form.component';
 
 
 
@@ -18,6 +20,7 @@ import { StructuralDirectivesComponent } from './structural-directives/structura
     HoldableDemoComponent,
     NgTemplateOutletCustomizationComponent,
     StructuralDirectivesComponent,
+    TemplateDrivenHeroFormComponent,
   ],
   exports: [
     DemoComponent,
@@ -26,8 +29,10 @@ import { StructuralDirectivesComponent } from './structural-directives/structura
     HoldableDemoComponent,
     NgTemplateOutletCustomizationComponent,
     StructuralDirectivesComponent,
+    TemplateDrivenHeroFormComponent,
   ],
   imports: [
+    FormsModule,
     SharedModule,
   ]
 })

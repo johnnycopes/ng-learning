@@ -1,6 +1,6 @@
 :host {
   display: grid;
-  grid-template-columns: [nav] 512px [demo] 1fr;
+  grid-template-columns: [nav] max-content [demo] 1fr;
   height: 100%;
 }
 

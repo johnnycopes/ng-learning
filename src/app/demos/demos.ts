@@ -4,6 +4,7 @@ import { NgTemplateOutletCustomizationComponent } from "./ng-template-outlet-cus
 import { StructuralDirectivesComponent } from "./structural-directives/structural-directives.component";
 import { HeadlessComponentsComponent } from "./headless-components/headless-components.component";
 import { GlobalEventListenersComponent } from "./global-event-listeners/global-event-listeners-demo.component";
+import { TemplateDrivenHeroFormComponent } from "./template-driven-hero-form/template-driven-hero-form.component";
 
 export const DEMOS: IDemo[] = [
   {
@@ -35,5 +36,11 @@ export const DEMOS: IDemo[] = [
     path: "05-global-event-listeners",
     resource: "https://indepth.dev/posts/1410/simple-angular-context-help-component-or-how-global-event-listener-can-affect-your-performance",
     component: GlobalEventListenersComponent,
+  },
+  {
+    name: "Template-Driven Hero Form",
+    path: "06-template-driven-hero-form",
+    resource: "https://www.spreaker.com/user/ng-conf/e047-forms-series-episode-2-template-dri",
+    component: TemplateDrivenHeroFormComponent,
   }
 ];

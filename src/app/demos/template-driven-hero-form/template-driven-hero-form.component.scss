@@ -1,0 +1,20 @@
+.buttons {
+  display: flex;
+
+  button {
+    margin-right: 8px;
+  }
+}
+
+.row {
+  margin-bottom: 8px;
+
+  h4 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    font-weight: bold;
+  }
+}
