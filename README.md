@@ -1,5 +1,7 @@
 # NgLearning
 
+## NOTE: this project is now being maintained in a [different repo](https://github.com/johnnycopes/atocha).
+
 A sandbox Angular project used for experimenting and learning
 
 ## Completed
